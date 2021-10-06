@@ -6,6 +6,8 @@ import java.util.Objects;
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
 
+import com.moufog.workshop.dto.UserDTO;
+
 @Document(collection = "user")
 public class User implements Serializable{
 
@@ -73,6 +75,7 @@ public class User implements Serializable{
 		User other = (User) obj;
 		return Objects.equals(id, other.id);
 	}
+	
 	
 
 }
