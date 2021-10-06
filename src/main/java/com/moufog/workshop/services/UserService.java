@@ -12,10 +12,10 @@ import com.moufog.workshop.repository.UserRepository;
 public class UserService {
 	
 	@Autowired
-	private UserRepository userRepository;
+	private UserRepository repo;
 	
 	public List<User> findAll(){
-		return userRepository.findAll();
+		return repo.findAll();
 		
 	}
 
